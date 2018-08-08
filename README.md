@@ -1,2 +1,2 @@
-# Unity_Plugins
-Plugins made for Unity3D
+# SimplyWater
+SimplyWater is a water system for Unity3D.
