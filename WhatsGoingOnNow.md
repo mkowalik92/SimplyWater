@@ -5,7 +5,7 @@
 --- TO DO ---
 
 {top_water} = Depth and Edge foam both need the camera's depth texture.
-+ Reflection             [X]
++ Reflection  [X]
 + Refraction             [ ]
 + Transparency           [ ]
 + Edge Foam              [ ]
