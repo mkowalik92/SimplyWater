@@ -7,11 +7,11 @@
 ### --- TO DO ---
 
 ##### top_water
-+ Reflection              [X]
-+ Refraction              [ ]
-+ Transparency            [ ]
-+ Edge Foam               [ ]
-+ Depth [ ]:
++ Reflection\ \ \ \ \ \ \ [X]
++ Refraction\ \ \ \ \ \ \ [ ]
++ Transparency\ \ \ \ \ \ [ ]
++ Edge Foam\ \ \ \ \ \ \  [ ]
++ Depth [ ]
     + Camera Depth Texture Required
 + Underwater caustics     [ ]
 + Vertex Displacement     [ ]
