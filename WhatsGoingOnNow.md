@@ -7,16 +7,18 @@
 ### --- TO DO ---
 
 ##### top_water
-+ Reflection [X]
-+ Refraction [ ]
-+ Transparency [ ]
-+ Edge Foam [ ]
-+ Depth [ ]
++ ~~Reflection~~
++ Refraction
++ Transparency
++ Edge Foam
+    + Shore
+    + Object
++ Depth
     + Camera depth texture required
-+ Underwater caustics     [ ]
-+ Vertex Displacement     [ ]
-+ Puddles                 [ ]
-+ Sound Effects           [ ]
-+ Physics/Bouyancy        [ ]
-+ Ocean Spray Particles   [ ]
-+ Foam Particles(Motion)  [ ]
++ Underwater caustics
++ Vertex Displacement
++ Puddles
++ Sound Effects
++ Physics/Bouyancy
++ Ocean Spray Particles
++ Foam Particles(Motion)
