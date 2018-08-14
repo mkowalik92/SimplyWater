@@ -11,7 +11,7 @@
 + Refraction              [ ]
 + Transparency            [ ]
 + Edge Foam               [ ]
-+ Depth[ ]:
+* Depth [ ]:
         <Depth and Edge foam both need the camera's depth texture>
 + Underwater caustics     [ ]
 + Vertex Displacement     [ ]
