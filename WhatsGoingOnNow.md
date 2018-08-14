@@ -4,12 +4,13 @@
 
 ### --- TO DO ---
 
-{top_water} = Depth and Edge foam both need the camera's depth texture.
+###### {top_water}
 + Reflection              [X]
 + Refraction              [ ]
 + Transparency            [ ]
 + Edge Foam               [ ]
 + Depth                   [ ]
+  <Depth and Edge foam both need the camera's depth texture.>
 + Underwater caustics     [ ]
 + Vertex Displacement     [ ]
 + Puddles                 [ ]
