@@ -1,6 +1,8 @@
 # SimplyWater
 -------------
-8/14 - Started from scratch again. Began by implementing simple skybox reflection on the top water plane. Starting
+8/14 - Started from scratch again. Began by implementing simple skybox reflection on the top water plane.
+
+### --- IN PROGRESS ---
 
 ### --- TO DO ---
 
@@ -10,7 +12,7 @@
 + Transparency            [ ]
 + Edge Foam               [ ]
 + Depth                   [ ]:
-    <Depth and Edge foam both need the camera's depth texture.>
+        <Depth and Edge foam both need the camera's depth texture.>
 + Underwater caustics     [ ]
 + Vertex Displacement     [ ]
 + Puddles                 [ ]
