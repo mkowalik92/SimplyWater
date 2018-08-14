@@ -12,7 +12,7 @@
 + Transparency            [ ]
 + Edge Foam               [ ]
 + Depth [ ]:
-        + <Camera Depth Texture Required>
+    + <Camera Depth Texture Required>
 + Underwater caustics     [ ]
 + Vertex Displacement     [ ]
 + Puddles                 [ ]
