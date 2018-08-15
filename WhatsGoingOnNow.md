@@ -27,3 +27,6 @@
 + Physics/Bouyancy
 + Ocean Spray Particles
 + Foam Particles(Motion)
+
+### --- Notes ---
+Under water caustics should be used as some kind of distort texture that is applied to a refraction shader for the bottom water plane.
