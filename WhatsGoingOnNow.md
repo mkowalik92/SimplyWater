@@ -19,9 +19,7 @@
 + Edge Foam
     + Shore
     + Object
-    + Camera depth texture required
 + ~~Depth~~
-    + Camera depth texture required
 + Underwater caustics
 + Vertex Displacement
 + Puddles
