@@ -29,4 +29,4 @@
 + Foam Particles(Motion)
 
 ### --- Notes ---
-Under water caustics should be used as some kind of distort texture that is applied to a refraction shader for the bottom water plane.
+Under water caustics should be used as some kind of distortion texture(animated through uv displacement) that is applied to a refraction shader for the bottom water plane.
