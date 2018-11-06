@@ -3,7 +3,7 @@
 	Properties
 	{
 		_EnvTex("Environment", Cube) = "gray" {}
-	_Refraction("Refration Index", float) = 0.9
+		_Refraction("Refration Index", float) = 0.9
 		_Fresnel("Fresnel Coefficient", float) = 5.0
 		_Reflectance("Reflectance", float) = 1.0
 	}
