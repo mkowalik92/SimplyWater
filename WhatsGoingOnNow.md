@@ -32,4 +32,4 @@
 ### --- Notes ---
 Under water caustics should be used as some kind of distortion texture(animated through uv displacement) that is applied to a refraction shader for the bottom water plane.
 
-Experimenting with caustics. Projecting the texture from above the water/through it probably the best solution? Projector follows the camera and intensity/distortion from noise changes depending on players distance from floor and whether the caustics are being viewed from above water/below. 11/06
+Experimenting with caustics. Projecting the texture from above the water/through it probably the best solution? Projector follows the camera and intensity/distortion from noise changes depending on players distance from floor and whether the caustics are being viewed from above water/below.
