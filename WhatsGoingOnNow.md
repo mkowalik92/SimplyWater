@@ -1,6 +1,6 @@
 # SimplyWater
 -------------
-+ 12/4 - Doing some more shader practice to hone my skills and learn about compute shaders. Going to be using compute shaders for the height map used in simulating water using FFTs. The caustic projector is being put on hold because I think I have to create my own simple projector instead of using unity's built-in one. Will most likely be starting over, again, from scratch. 
++ 12/4 - Doing some more shader practice to hone my skills and learn about compute shaders. Going to be using compute shaders for the height map used in simulating water using tessendorf's method. The caustic projector is being put on hold because I think I have to create my own simple projector instead of using unity's built-in one. Will most likely be starting over, again, from scratch. 
 + 11/06 - Need to create a custom unity projector shader. The default multiply shader is giving me weird visual artifacts, I think...
 + 9/11 - Big changes coming soon.(Guess not...)
 + 8/14 - Started from scratch again. Began by implementing simple skybox reflection on the top water plane. Made a decent depth shader and added transparency. Now I need to combine those effects to make something decent. Started working on refraction and will begin fresnel/edge foam soon since the depth texture is taken care of. 
