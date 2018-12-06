@@ -23,7 +23,7 @@
     + Object
 + ~~Depth~~
 + Underwater caustics
-+ Vertex Displacement - Create wave height map - FFT Simulation based on wave works/tessendorf
++ Vertex Displacement - Create wave height map - FFT Simulation based on nvwaveworks/tessendorf
 + Puddles
 + Sound Effects
 + Physics/Bouyancy
