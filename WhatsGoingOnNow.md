@@ -23,7 +23,7 @@
     + Object
 + ~~Depth~~
 + Underwater caustics
-+ Vertex Displacement (implement a FFT? or something simpler like gerstner waves?)
++ Vertex Displacement - Create wave height map - FFT Simulation based on wave works/tessendorf
 + Puddles
 + Sound Effects
 + Physics/Bouyancy
