@@ -1,4 +1,4 @@
-// Returns a 2D texture filled with random values (grayscale)
+// Returns a 2D texture filled with random values (grayscale) (noise)
 
 #pragma kernel FillWithRandom
 
