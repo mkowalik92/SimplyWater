@@ -4,7 +4,7 @@ This compute shader is the base for tessendorf's method of simulating ocean wave
 
 Also, there may be a slight problem with the noise this compute shader generates. It sometimes gives a distinct black border on 1-2 edges of the textures. I will look into that...
 
-++RUNNING++
+##### ++RUNNING++
 - Create an empty game object in unity and attached the c# script to the game object.
 - Create a quad/plane/mesh with a material using the standard shader.
 - Drag and drop the material onto the material slot in the gameobject/script in the unity editor to link them together.
