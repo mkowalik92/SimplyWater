@@ -1,4 +1,4 @@
-﻿Shader "Custom/Pseudo Refraction"
+Shader "Custom/Pseudo Refraction"
 {
 	Properties
 	{
