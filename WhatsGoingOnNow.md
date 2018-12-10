@@ -9,7 +9,7 @@
 ### --- IN PROGRESS ---
 + Honing my skills.
 + Vertex Displacement
-++ ~h0(k) + ~h0(-k) -> twiddle factors -> h(k,t) -> fft(cooley-tukey/butterfly algorithm) -> inversion(obtain spatial domain)
+    + ~h0(k) + ~h0(-k) -> twiddle factors -> h(k,t) -> fft(cooley-tukey/butterfly algorithm) -> inversion(obtain spatial domain)
 
 ### --- TO DO ---
 
