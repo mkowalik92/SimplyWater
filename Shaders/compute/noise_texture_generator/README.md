@@ -7,10 +7,12 @@ This compute shader is the base for tessendorf's method of simulating ocean wave
 Also, there may be a slight problem with the noise this compute shader generates. It sometimes gives a distinct black border on 1-2 edges of the textures. I will look into that...
 Update: Looked into it and the xor shift is very strange. Maybe it is just my implementation? Anyways I will be re-coding the rng generator to use the following algorithm that I found posted on various sites:
 
-    /* Just need to incorporate a seed so I can generate more than one different noise texture.
-           The seed will be updated via the c# script that dispatches the compute shader.
-           Which can be easily adjusted/incremented however the user will like.
-           Using this new rng algorithm I am getting no distinct black border like I was with the xor shift. */
+    /* 
+    Just need to incorporate a seed so I can generate more than one different noise texture.
+    The seed will be updated via the c# script that dispatches the compute shader.
+    Which can be easily adjusted/incremented however the user will like.
+    Using this new rng algorithm I am getting no distinct black border like I was with the xor shift. 
+    */
            
     float nrand(float2 uv)
     {
