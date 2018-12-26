@@ -1,2 +1,3 @@
 # SimplyWater
-SimplyWater is a water system for Unity3D.
+SimplyWater is a water system, that is still under development, for Unity3D.
+---
