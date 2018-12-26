@@ -4,8 +4,9 @@
 Check out the WhatsGoingOnNow doc to see what I am currently working on/notes.
 
 ###### Features in Development:
-* Customizable ocean material
+* Ocean material
 
 ###### Planned Features:
-* Customizable interactive water effects
-* Customizable river material
+* Underwater effects
+* Interactive water effects
+* River material
