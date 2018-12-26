@@ -1,6 +1,6 @@
 # SimplyWater
-##### This is a work in progress. I only work on this in my free time. Feel free to become a contributor as this will become a free asset on the unity store. The current community ocean shader is not fps friendly, doesn't use tessendorf's method, and doesn't implement compute shaders. This is an attempt to create a new one; using NVidia WaveWorks and other's implementations of Tessendorf's method as inspiration.
--------------
+###### This doc contains my blog/record/notes/thoughts about this open source project. This will be eventually moved to a more "professional looking" development blog located on my personal website, whenever I actually feel like sitting down and finishing it up... Having too much fun with shaders and opengl lately.
+---
 + 12/9 -  Currently finalzing a shader that creates noise textures(small problem that can be addressed later). I will be working on creating the compute shaders for calculating (tilde h0(k)) and (tilde minus h0(k)), then the shader to combine both tilde h0(k)s into the time dependent h0(kt). Then I will mess around with texture sampling and noise generation, run some tests, and then pick the mose optimized method. 
 + 12/4 - Doing some more shader practice to hone my skills and learn about compute shaders. Going to be using compute shaders for the height map used in simulating water using tessendorf's method. The caustic projector is being put on hold because I think I have to create my own simple projector instead of using unity's built-in one. Will most likely be starting over, again, from scratch. 
 + 11/06 - Need to create a custom unity projector shader. The default multiply shader is giving me weird visual artifacts, I think...
