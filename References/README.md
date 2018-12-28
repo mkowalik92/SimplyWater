@@ -14,5 +14,4 @@
 * https://en.wikibooks.org/wiki/Cg_Programming/Unity (Lots of unity shader examples)
 * https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-shading/reflection-refraction-fresnel (Water lighting)
 * https://lindenreid-wordpress-com.cdn.ampproject.org/v/s/lindenreid.wordpress.com/2017/12/15/simple-water-shader-in-unity/amp/?amp_js_v=0.1&usqp=mq331AQCCAE=#referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s&ampshare=https%3A%2F%2Flindseyreidblog.wordpress.com%2F2017%2F12%2F15%2Fsimple-water-shader-in-unity%2F (Edge foam and depth. Linden Reid has great tutorials)
-
 ..* https://lindenreid.wordpress.com/all-tutorials/ (Linden Reid's shader tutorial list)
