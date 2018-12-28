@@ -1,1 +1,3 @@
-# This contains any and all references I utilized while researching/implementing tessendorf's waves.
+#### This contains any and all references I utilized while researching/implementing tessendorf's waves.
+---
+* https://github.com/mkowalik92/WaveWorks
