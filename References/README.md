@@ -1,5 +1,6 @@
 #### This contains any and all references I utilized while researching/implementing tessendorf's waves.
 ---
+* https://github.com/QianMo (Amazing repos for getting into shader development. Especially the Gamer-Programmer-Study-Notes. I used google translate.)
 * https://github.com/mkowalik92/WaveWorks (Great FFT implementation)
 * https://www.youtube.com/watch?v=B3YOLg0sA2g&t=2s (Java/GLSL implementation of FFT with compute shaders, AMAZING resource!(READ THE PAPER HE PUBLISHED!!!))
 * NVIDIA GPU Gems Books (Water rendering techniques and lots of other useful info)
