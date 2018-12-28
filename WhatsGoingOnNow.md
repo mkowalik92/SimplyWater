@@ -1,6 +1,7 @@
 # SimplyWater
 ###### This doc contains my blog/record/notes/thoughts about this open source project. This will be eventually moved to a more "professional looking" development blog located on my personal website, whenever I actually feel like sitting down and finishing it up... Having too much fun with shaders and opengl lately.
 ---
++ 12/28 - Making great progress on the ocean simulation. The h0k compute shader works flawlesly and I am getting identical results for the h0k and h0minusk textures.
 + 12/9 -  Currently finalzing a shader that creates noise textures(small problem that can be addressed later). I will be working on creating the compute shaders for calculating (tilde h0(k)) and (tilde minus h0(k)), then the shader to combine both tilde h0(k)s into the time dependent h0(kt). Then I will mess around with texture sampling and noise generation, run some tests, and then pick the mose optimized method. 
 + 12/4 - Doing some more shader practice to hone my skills and learn about compute shaders. Going to be using compute shaders for the height map used in simulating water using tessendorf's method. The caustic projector is being put on hold because I think I have to create my own simple projector instead of using unity's built-in one. Will most likely be starting over, again, from scratch. 
 + 11/06 - Need to create a custom unity projector shader. The default multiply shader is giving me weird visual artifacts, I think...
@@ -8,9 +9,8 @@
 + 8/14 - Started from scratch again. Began by implementing simple skybox reflection on the top water plane. Made a decent depth shader and added transparency. Now I need to combine those effects to make something decent. Started working on refraction and will begin fresnel/edge foam soon since the depth texture is taken care of. 
 
 ### --- IN PROGRESS ---
-+ Honing my skills.
-+ Vertex Displacement
-    + ~h0(k) + ~h0(-k) -> twiddle factors -> h(k,t) -> fft(cooley-tukey/butterfly algorithm) -> inversion(obtain spatial domain)
++ Vertex Displacement Map
+    + ~~~h0(k)~~ + ~~~h0(-k)~~ -> twiddle factors -> h(k,t) -> fft(cooley-tukey/butterfly algorithm) -> inversion(obtain spatial domain)
 
 ### --- TO DO ---
 
