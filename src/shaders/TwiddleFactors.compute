@@ -1,0 +1,62 @@
+﻿#pragma kernel main
+
+#define PI 3.1415926535897932384626433832795
+
+RWTexture2D<float4> twiddleFactorsTexture;
+
+// Input uniform int N
+uint N;
+// Input bit reversed indices input array
+int bitReversedIndices[256];
+// Create complex number struct
+struct complex
+{
+	float real;
+	float im;
+};
+
+[numthreads(1, 16, 1)]
+void main (uint3 threadId : SV_DispatchThreadID)
+{
+	float2 x = threadId.xy;
+	float k = (x.y * (float(N) / pow(2, x.x + 1)) % N);
+
+	complex twiddle;
+	twiddle.real = cos(2.0*PI*k/float(N));
+	twiddle.im = sin(2.0*PI*k/float(N));
+
+	int butterflySpan = int(pow(2, x.x));
+	int butterflyWing;
+
+	if ((x.y % pow(2, x.x + 1)) < pow(2, x.x))
+	{
+		butterflyWing = 1;
+	}
+	else
+	{
+		butterflyWing = 0;
+	}
+
+	if (x.x == 0)
+	{
+		if (butterflyWing == 1)
+		{
+			twiddleFactorsTexture[threadId.xy] = float4(twiddle.real, twiddle.im, bitReversedIndices[int(x.y)], bitReversedIndices[int(x.y + 1)]);
+		}
+		else
+		{
+			twiddleFactorsTexture[threadId.xy] = float4(twiddle.real, twiddle.im, bitReversedIndices[int(x.y - 1)], bitReversedIndices[int(x.y)]);
+		}
+	}
+	else
+	{
+		if (butterflyWing == 1)
+		{
+			twiddleFactorsTexture[threadId.xy] = float4(twiddle.real, twiddle.im, x.y, x.y + butterflySpan);
+		}
+		else
+		{
+			twiddleFactorsTexture[threadId.xy] = float4(twiddle.real, twiddle.im, x.y - butterflySpan, x.y);
+		}
+	}
+}
