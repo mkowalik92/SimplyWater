@@ -1,0 +1,93 @@
+﻿#pragma kernel main
+
+#define PI 3.1415926535897932384626433832795
+const float gravity = 9.81;
+
+Texture2D<float4> h0kTexture;
+Texture2D<float4> h0minuskTexture;
+
+RWTexture2D<float4> dxDisplacement;
+RWTexture2D<float4> dyDisplacement;
+RWTexture2D<float4> dzDisplacement;
+
+uint N;
+uint L;
+float T;
+
+struct complex
+{
+	float real;
+	float im;
+};
+
+complex mul (complex c0, complex c1)
+{
+	complex result;
+	result.real = (c0.real * c1.real) - (c0.im * c1.im);
+	result.im = (c0.real * c1.im) + (c1.im * c1.real);
+	return result;
+}
+
+complex add (complex c0, complex c1)
+{
+	complex result;
+	result.real = c0.real + c1.real;
+	result.im = c0.im + c1.im;
+	return result;
+}
+
+complex conj (complex c)
+{
+	complex result;
+	result.real  = c.real;
+	result.im = -c.im;
+	return result;
+}
+
+[numthreads(16, 16, 1)]
+void main (uint3 threadId : SV_DispatchThreadID)
+{
+	float2 x = int2(threadId.xy) - (float(N) / 2.0);
+	float2 k = float2(2.0 * PI * (x.x / L), 2.0 * PI * (x.y / L));
+
+	float magnitude = length(k);
+	if (magnitude < 0.00001) magnitude = 0.00001;
+
+	float w = sqrt(gravity * magnitude);
+
+	complex fourier_amplitude;
+	fourier_amplitude.real = h0kTexture[threadId.xy].r;
+	fourier_amplitude.im = h0kTexture[threadId.xy].g;
+	complex fourier_amplitude_minus;
+	fourier_amplitude_minus.real = h0minuskTexture[threadId.xy].r;
+	fourier_amplitude_minus.im = h0minuskTexture[threadId.xy].g;
+	complex fourier_amplitude_conj = conj(fourier_amplitude_minus);
+
+	float cosinus = cos(w * T);
+	float sinus = sin(w * T);
+
+	complex exp_iwt;
+	exp_iwt.real = cosinus;
+	exp_iwt.im = sinus;
+	complex exp_iwt_inv;
+	exp_iwt_inv.real = cosinus;
+	exp_iwt_inv.im = -sinus;
+
+	// dy displacement
+	complex hkt_dy = add(mul(fourier_amplitude, exp_iwt), mul(fourier_amplitude_conj, exp_iwt_inv));
+	
+	// dx displacement
+	complex dx;
+	dx.real = 0.0;
+	dx.im = -k.x / magnitude;
+	complex hkt_dx = mul(dx, hkt_dy);
+
+	complex dy;
+	dy.real = 0.0;
+	dy.im = -k.y / magnitude;
+	complex hkt_dz = mul(dy, hkt_dy);
+
+    dyDisplacement[threadId.xy] = float4(hkt_dy.real, hkt_dy.im, 0.0, 1.0);
+	dxDisplacement[threadId.xy] = float4(hkt_dx.real, hkt_dx.im, 0.0, 1.0);
+	dzDisplacement[threadId.xy] = float4(hkt_dz.real, hkt_dz.im, 0.0, 1.0);
+}
