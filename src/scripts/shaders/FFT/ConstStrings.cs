@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public static class ConstStrings
 {
@@ -16,6 +16,12 @@ public static class ConstStrings
     public const string shaderTwiddleFactorsOutputTextureStr = "twiddleFactorsTexture";
 
     public const string shaderTwiddleFactorsInput_bitReverseIndices = "bitReversedIndices";
+    // hkt
+    public const string shaderInput_T = "T"; // Frame time
+
+    public const string dxDisplacementTextureStr = "dxDisplacement";
+    public const string dyDisplacementTextureStr = "dyDisplacement";
+    public const string dzDisplacementTextureStr = "dzDisplacement";
 
     // ocean settings
     public const string shaderInput_N = "N";
