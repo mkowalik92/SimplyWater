@@ -20,3 +20,5 @@
 * https://gamedev.stackexchange.com/questions/135375/animated-textures-for-models-how-to-write-a-shader/135387 (Tutorial on beginner shader texture displacement)
 * https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA (Great tutorials on beginning with Unity game development)
 * https://www.youtube.com/channel/UCJKLCjeujQj-d3JjsbVtkJw (Tutorials on creating custom Unity shaders from scratch. Goes through code and implements it line by line. Long videos.)
+* (Native Plugin Example - Directx) https://github.com/ritchielozada/UnityWithWebRTC/blob/master/ExternalProjects/WebRtcIntegration/TexturesUWP/TexturesUWP.cpp
+* (Native Plugin Example - OpenGL) https://github.com/przemyslawzaworski/Unity3D-C-programming/tree/master/NativePluginOpenGL
